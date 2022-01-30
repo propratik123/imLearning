@@ -1,15 +1,90 @@
-for(i=1; i<=1; i++){
-    console.log(i)
+
+
+
+/* 
+
+Pattern 1:-
+
+1
+22
+333
+4444
+55555 
+
+*/
+
+var valueToprint = "";
+for(var i = 1; i <= 5; i++) {
+       
+        for(var j = 1; j <= i; j++) {
+          valueToprint += i;  //valueToprint= "" + i; i = 2
+        }
+        valueToprint += "\n";
+     }
+     console.log(valueToprint);
+    
+
+/* Output:-
+
+1
+22
+333
+4444
+55555
+
+*/
+
+
+
+
+/* 
+
+Pattern 2:-
+
+    #    
+   ##
+  ###
+ ####
+#####
+
+*/
+var n = 5;
+var valueToprint = "";
+for(var i = 1; i <= n; i++) //for loop for printing rows
+    {
+       
+        for(var j = 0; j < n - i; j++) {
+          valueToprint += " ";
+        }
+          for(var k =1; k <= i; k++) {
+          valueToprint += "#";
+         }
+     valueToprint += "\n";
 }
-for(i=2; i<=2; i++){
-    console.log(i+"2")
-}
-for(i=3; i<=3; i++){
-    console.log(i+"33")
-}
-for(i=4; i<=4; i++){
-    console.log(i+"444")
-}
-for(i=5; i<=5; i++){
-    console.log(i+"5555")
-}
+     console.log(valueToprint);
+
+     /*
+
+     Output:-
+
+    #
+   ##
+  ###
+ ####
+#####
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
